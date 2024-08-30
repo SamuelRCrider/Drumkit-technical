@@ -19,12 +19,7 @@ func main() {
 
 	app := fiber.New()
 
-	app.Get("", func(c *fiber.Ctx) error {
-		log.Printf("The root path was hit")
-		return c.SendString("Go to /auth to get started")
-	})
-
-	app.Get("/auth", func(c *fiber.Ctx) error {
+	app.Get("/", func(c *fiber.Ctx) error {
 		const (
 			MOTIVE_URL   = "https://api.gomotive.com/oauth/authorize"
 			CLIENT_ID    = "98a670ed21a9b27a7e104160d61d51396577283d942b630202e12557a39a76f4"
@@ -43,7 +38,7 @@ func main() {
 
 		request.HandleRequest(access_token)
 
-		return c.SendString("Go check out Pipedream!")
+		return c.Redirect("https://pipedream.com/@axle-interview/projects/proj_ELsRy5R/crider-data-responses-p_yKCLpDg/inspect")
 	})
 
 	err = app.Listen(":" + os.Getenv("PORT"))
