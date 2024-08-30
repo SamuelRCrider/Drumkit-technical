@@ -1,6 +1,6 @@
 # Drumkit Technical
 
-This is a simple Go application that will fetch data from the Motive API and send it to a callback URL.
+This is a simple Go application that will fetch data from the Motive API and send it to a callback URL. Note that on first attempt the AWS Lambda will cold start therefore taking longer to respond.
 
 ## The process
 
