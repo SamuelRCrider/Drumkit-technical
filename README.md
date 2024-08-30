@@ -38,11 +38,14 @@ Login information for Motive and Pipedream.
 #### Outputs
 - Motive outputs a code on oAuth flow, we exchange it for a token
 - The lambda sends three callbacks to Pipedream after the oAuth flow is done.
-     1. Users (Drivers): <img width="473" alt="Screenshot 2024-08-30 at 9 44 56 AM" src="https://github.com/user-attachments/assets/1cde7323-1ffb-4e2d-b6be-eecde8002066">
+     1. Users (Drivers):
+        <img width="473" alt="Screenshot 2024-08-30 at 9 44 56 AM" src="https://github.com/user-attachments/assets/1cde7323-1ffb-4e2d-b6be-eecde8002066">
 
-     2. Vehicles: <img width="501" alt="Screenshot 2024-08-30 at 9 45 46 AM" src="https://github.com/user-attachments/assets/18f5ad7e-082d-411b-bf1d-3c772681d2af">
+     3. Vehicles:
+        <img width="501" alt="Screenshot 2024-08-30 at 9 45 46 AM" src="https://github.com/user-attachments/assets/18f5ad7e-082d-411b-bf1d-3c772681d2af">
 
-     3. Assets (Trailers): <img width="553" alt="Screenshot 2024-08-30 at 9 46 13 AM" src="https://github.com/user-attachments/assets/38633c72-aaeb-49d3-bb4b-ccc9184df1bf">
+     5. Assets (Trailers):
+        <img width="553" alt="Screenshot 2024-08-30 at 9 46 13 AM" src="https://github.com/user-attachments/assets/38633c72-aaeb-49d3-bb4b-ccc9184df1bf">
 
 
 ## Problems/Notes
