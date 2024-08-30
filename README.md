@@ -9,7 +9,7 @@ This is a simple Go application that will fetch data from the Motive API and sen
 
 1. I created a gofiber server with two GET endpoints:
    - `/`: here we redirect the user to the Motive API to authorize our app. This redirects to Pipedream and exchanges the code for an access token and then redirects back to our server.
-   - `/callback`: this endpoint is hit when the user is redirected back to our server. We use the access token to fetch data from the Motive API and send it to Pipedream, then redirect to Pipedream.
+   - `/callback`: this endpoint is hit when the user is redirected back to our server. We use the access token to fetch data from the Motive API and progressively send it to Pipedream, then redirect the user to Pipedream.
 2. I created a `request` package that handles the communication with the Motive API and the callback URL. There are five functions in this package:
    - `newMotiveAPI`: creates a new Motive API client
    - `fetchComponent`: fetches a specific component from the Motive API
@@ -45,7 +45,7 @@ This is a simple Go application that will fetch data from the Motive API and sen
 
 #### Note 1
 
-- On initial test, user must log into Motive. This is expected behavior.
+- On initial test, user must log into Motive and Pipedream if not already logged in. This is expected behavior.
 
 #### Note 2
 
